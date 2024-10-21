@@ -1,19 +1,25 @@
+// Write your code at relevant places in the code below:
+
 import React from "react";
+import Card from  "./card.js";
+import "./AddUser.css";
+const AddUser = () => {
+  const addUserHandler = (event) => {
+    event.preventDefault();
+  };
 
-const AddUser = (props) =>{
-
-const addUserHandler = (event) =>{
-  event.preventDefault();
-}
-  
-  return(<div>
-    <form submit={addUserHandler}>
+  return (
+    <Card className="input">
+    <form onSubmit={addUserHandler}>
       <label htmlFor="username">Username</label>
-      <input id="username"></input>
+      <input id="username" type="text" />
       <label htmlFor="age">Age</label>
-      <input id="age"></input>
+      <input id="age" type="number" />
       <button type="submit">Add User</button>
     </form>
-  </div>)
-}
+    </Card>
+    
+  );
+};
+
 export default AddUser;
