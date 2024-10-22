@@ -1,6 +1,6 @@
-import React,{useState} from "react";
-import Card from "./card";
-import Button from "./Button";
+import React, { useState } from "react";
+import Card from "../Users/card";
+import Button from "../Users/Button";
 import "./AddUser.css";
 
 const AddUser = (props) => {
